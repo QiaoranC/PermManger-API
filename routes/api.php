@@ -9,13 +9,10 @@ $api->version('v1', ['namespace' => 'App\Http\Controllers'], function ($api) {
     return app()->version();
   });
 
-  // $api->resource('areas', 'AreaController');
-  // $api->resource('users', 'UserInfoController');
-  // $api->resource('institutions', 'InstitutionController');
-  // $api->get('roles/create', 'RoleController@showAllperm');
-  // $api->resource('roles', 'RoleController');
-  // $api->get('userRoles/create', 'UserRoleController@showAllrole');
-  // $api->resource('userRoles', 'UserRoleController');
-  // $api->resource('permissions', 'PermissionController');
+  $api->resource('users', 'UserController');
+  $api->resource('roles', 'RoleController');
+  $api->resource('permissions', 'PermissionController');
+  $api->get('showAllrole', 'UserController@showAllrole');
+  $api->get('showAllperm', 'RoleController@showAllperm');
 
 });
