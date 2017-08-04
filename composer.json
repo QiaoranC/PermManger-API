@@ -6,10 +6,11 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "barryvdh/laravel-cors": "^0.9.2",
+        "dingo/api": "1.0.x@dev",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "zizaco/entrust": "5.2.x-dev",
-        "dingo/api": "1.0.x@dev"
+        "zizaco/entrust": "5.2.x-dev"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

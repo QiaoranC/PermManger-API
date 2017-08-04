@@ -20,6 +20,7 @@
     "vue-resource": "^1.0.3"
   },
   "dependencies": {
+    "cors": "^2.8.4",
     "vue-router": "^2.0.1"
   }
 }
